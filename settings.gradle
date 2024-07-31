@@ -18,3 +18,12 @@ plugins {
 }
 
 include 'defaults'
+
+stonecutter {
+    shared {
+        versions '1.19.4', '1.20.1', '1.20.4', '1.21'
+        vcsVersion '1.21'
+    }
+
+    create rootProject, project(':defaults')
+}

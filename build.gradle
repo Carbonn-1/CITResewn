@@ -59,11 +59,3 @@ if (stonecutter.current().isActiveVersion()) {
 
         dependsOn tasks.getByName('build')
     }
-
-        if (gradle.startParameter.taskNames.contains(it.name)) {
-            System.out.println("Type the task name to confirm (${it.name}): ")
-            try (BufferedReader input = new BufferedReader(new InputStreamReader(System.in))) {
-                if (input.readLine() != it.name)
-                    throw new GradleException('Task cancelled by user')
-            }
-        }

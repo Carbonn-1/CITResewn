@@ -1,7 +1,7 @@
 plugins.apply 'fabric-loom'
 plugins.apply 'io.shcm.shsupercm.fabric.fletchingtable'
 
-version = "${property('mod.version')}+${stonecutter.current().version()}"
+version = "Carbon+${stonecutter.current().version()}"
 group = 'shcm.shsupercm.fabric.citresewn'
 
 repositories {
